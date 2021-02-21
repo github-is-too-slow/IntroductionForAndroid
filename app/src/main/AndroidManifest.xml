@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.billion.helloworld">
+
+    <!-- 开启网络请求权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 开启外部存储（写）权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 1.不显示标题栏android:theme="@style/Theme.Design.NoActionBar" -->
+    <!-- 2.改变标题栏的内容android:label="test" -->
+    <!-- 3.竖屏显示android:screenOrientation="portrait" -->
+    <!-- 4.横屏显示android:screenOrientation="landscape" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UIActivity" />
+        <activity android:name=".TextViewActivity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".RadioButtonActivity" />
+        <activity android:name=".CheckedBoxActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".gridview.GridViewActivity" />
+        <activity android:name=".recyclerview.RecyclerViewActivity" />
+        <activity android:name=".recyclerview.LinearRecyclerViewActivity" />
+        <activity android:name=".recyclerview.HorRecyclerViewActivity" />
+        <activity android:name=".recyclerview.GridRecyclerViewActivity" />
+        <activity android:name=".recyclerview.PuRecyclerViewActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".CustomDialogActivity" />
+        <activity android:name=".PopupWindowActivity" />
+        <activity android:name=".LifeCycleActivity" />
+        <!-- 隐式从SrcActivity跳转到DestActivity -->
+        <!-- 启动模式：standard（默认）、singleTop（常用）、singleTask（常用）、singleInstance（不常用） -->
+        <activity
+            android:name=".jump.SrcActivity"
+            android:label="Src"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".jump.DestActivity"
+            android:label="Dest">
+            <intent-filter>
+
+                <!-- 隐式跳转String -->
+                <action android:name="srcToDest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fragment.FragmentActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".datastorage.DataStorageActivity" />
+        <activity android:name=".datastorage.SharedPreferencesActivity" />
+        <activity android:name=".datastorage.FileActivity" />
+        <activity android:name=".boardcast.BoardcastActivity1" />
+        <activity android:name=".boardcast.BoardcastActivity2" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".RippleActivity"></activity>
+    </application>
+
+</manifest>

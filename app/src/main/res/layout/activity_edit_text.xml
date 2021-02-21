@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <!--1.默认文本、文本大小、颜色-->
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="#FF0033"
+        android:hint="用户名"
+        android:maxLines="1"
+        android:background="@drawable/bg_username"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ico_user_48"/>
+
+    <!--2.密码框-->
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:textColor="#0000FF"
+        android:hint="密码"
+        android:maxLines="1"
+        android:background="@drawable/bg_username"
+        android:layout_below="@id/et_1"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ico_password_48"/>
+
+    <!--&lt;!&ndash;3.手机号，弹出数字键&ndash;&gt;-->
+    <!--<EditText-->
+        <!--android:id="@+id/et_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="number"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#0000FF"-->
+        <!--android:hint="手机号"-->
+        <!--android:layout_below="@id/et_2"-->
+        <!--android:layout_marginTop="15dp"/>-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_btn4"
+        android:layout_below="@id/et_2"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>

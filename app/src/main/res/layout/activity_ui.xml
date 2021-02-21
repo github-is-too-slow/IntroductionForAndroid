@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--水平滚动控件-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--scrollView控件只能有一个子元素-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--TextView测试按钮-->
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text_View"
+            android:textAllCaps="false"/>
+
+        <!--Button测试按钮-->
+        <Button
+            android:id="@+id/btn_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textAllCaps="false"/>
+
+        <!--EditText测试按钮-->
+        <Button
+            android:id="@+id/btn_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit_Text"
+            android:textAllCaps="false"/>
+
+        <!--RadioButton测试按钮-->
+        <Button
+            android:id="@+id/btn_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio_Button"
+            android:textAllCaps="false"/>
+
+        <!--CheckBox测试按钮-->
+        <Button
+            android:id="@+id/btn_checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:textAllCaps="false"/>
+
+        <!--ImageView测试按钮-->
+        <Button
+            android:id="@+id/btn_imgview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ImageView"
+            android:textAllCaps="false"/>
+
+        <!--ListView测试按钮-->
+        <Button
+            android:id="@+id/btn_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ListView"
+            android:textAllCaps="false"/>
+
+        <!--GridView测试按钮-->
+        <Button
+            android:id="@+id/btn_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GridView"
+            android:textAllCaps="false"/>
+
+        <!--RecyclerView测试按钮-->
+        <Button
+            android:id="@+id/btn_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecycleView"
+            android:textAllCaps="false"/>
+
+        <!--WebView测试按钮-->
+        <Button
+            android:id="@+id/btn_webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WebView"
+            android:textAllCaps="false"/>
+
+        <!--Toast测试按钮-->
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast"
+            android:textAllCaps="false"/>
+
+        <!--AlertDialog测试按钮-->
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog"
+            android:textAllCaps="false"/>
+
+        <!--ProgressBar测试按钮-->
+        <Button
+            android:id="@+id/btn_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ProgressBar"
+            android:textAllCaps="false"/>
+
+        <!--CustomDialog测试按钮-->
+        <Button
+            android:id="@+id/btn_customDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CustomDialog"
+            android:textAllCaps="false"/>
+
+        <!--PopupWindow下拉菜单测试按钮-->
+        <Button
+            android:id="@+id/btn_popupWindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PopupWindow"
+            android:textAllCaps="false"/>
+
+        <!--LifeCycle测试按钮-->
+        <Button
+            android:id="@+id/btn_lifeCycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LifeCycle"
+            android:textAllCaps="false"/>
+
+        <!--Intent测试按钮-->
+        <Button
+            android:id="@+id/btn_intent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intent"
+            android:textAllCaps="false"/>
+
+        <!--Fragment测试按钮-->
+        <Button
+            android:id="@+id/btn_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment"
+            android:textAllCaps="false"/>
+
+        <!--水波纹测试按钮-->
+        <Button
+            android:id="@+id/btn_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="水波纹"
+            android:textAllCaps="false"/>
+
+        <!--&lt;!&ndash;HorizontalScrollView水平滚动控件只能有一个子元素&ndash;&gt;-->
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="250dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:padding="15dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<Button-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Test1"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textColor="@color/colorBlack"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@color/colorDarkOrange"-->
+                    <!--android:layout_marginRight="15dp"/>-->
+
+                <!--<Button-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Test2"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textColor="@color/colorBlack"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@color/colorDarkOrange"-->
+                    <!--android:layout_marginRight="15dp"/>-->
+
+                <!--<Button-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Test3"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textColor="@color/colorBlack"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@color/colorDarkOrange"-->
+                    <!--android:layout_marginRight="15dp"/>-->
+            <!--</LinearLayout>-->
+        <!--</HorizontalScrollView>-->
+    </LinearLayout>
+</ScrollView>

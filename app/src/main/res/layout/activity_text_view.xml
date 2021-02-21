@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <!--1.设置文本、文字大小、文字颜色-->
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天下武功，为快不破"
+        android:textSize="28sp"
+        android:textColor="#000000" />
+
+    <!--2.设置单行显示省略号-->
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="天下武功，为快不破"
+        android:textSize="28sp"
+        android:textColor="#000000" />
+
+    <!--3.设置显示下拉箭头-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv_3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--android:drawableRight="@drawable/TextView"-->
+        <!--android:text="筛选"-->
+        <!--android:textSize="28sp"-->
+        <!--android:textColor="#000000" />-->
+
+    <!--4.代码设置中划线-->
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="天下武功，唯快不破"
+        android:textSize="28sp"
+        android:textColor="#000000" />
+
+    <!--5.代码设置下划线-->
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="天下武功，唯快不破"
+        android:textSize="28sp"
+        android:textColor="#000000" />
+
+    <!--6.设置跑马灯效果，滑动弹幕-->
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天下武功，唯快不破天下武功，唯快不破天下武功，唯快不破天下武功，唯快不破"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+</LinearLayout>

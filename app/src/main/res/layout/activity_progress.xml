@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="15dp">
+
+    <!--默认style=@android:style/Widget.Material.ProgressBar-->
+    <ProgressBar
+        android:id="@+id/pb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_marginTop="15dp"/>
+
+    <!--水平进度条，设置最大进度为100，当前进度值20，二级进度值为50
+    android:secondaryProgress="50"-->
+    <ProgressBar
+        android:id="@+id/pb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="30"
+        android:layout_marginTop="15dp"/>
+
+    <ProgressBar
+        android:id="@+id/pb4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <!--代码模拟进度-->
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="模拟进度"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"/>
+
+    <!--自定义旋转进度图片方式1，直接设置android:indeterminateDrawable-->
+    <ProgressBar
+        android:id="@+id/pb5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/bg_progress"
+        android:layout_marginTop="15dp"/>
+
+    <!--自定义旋转进度图片方式3，设置自定义style属性-->
+    <ProgressBar
+        android:id="@+id/pb6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyProgressBar"
+        android:layout_marginTop="15dp"/>
+
+    <!--点击弹出ProgressDialog对话框1-->
+    <Button
+        android:id="@+id/btn_progressDialog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog1"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"/>
+
+    <!--点击弹出ProgressDialog对话框2-->
+    <Button
+        android:id="@+id/btn_progressDialog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog2"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

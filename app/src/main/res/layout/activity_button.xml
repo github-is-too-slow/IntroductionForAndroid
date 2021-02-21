@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <!--1.设置按钮文本、文本大小、文本颜色、背景颜色-->
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮1"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="#FFFF00"/>
+
+    <!--2.设置圆角shape-->
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="按钮2"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_btn2"
+        android:layout_below="@id/btn_1"
+        android:layout_marginTop="15dp"/>
+
+    <!--3.设置描边-->
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="按钮3"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_btn3"
+        android:layout_below="@id/btn_2"
+        android:layout_marginTop="15dp"/>
+
+    <!--4.设置按压变色效果-->
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="按钮4"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_btn4"
+        android:layout_below="@id/btn_3"
+        android:layout_marginTop="15dp"/>
+
+    <!--5.设置单击事件方式1: 设置单击方法showToast-->
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="按钮5"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_btn4"
+        android:onClick="showToast"
+        android:layout_below="@id/btn_4"
+        android:layout_marginTop="15dp"/>
+
+    <!--6.设置单击事件方式2-->
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="按钮6"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_btn4"
+        android:layout_below="@id/btn_5"
+        android:layout_marginTop="15dp"/>qw
+
+</RelativeLayout>

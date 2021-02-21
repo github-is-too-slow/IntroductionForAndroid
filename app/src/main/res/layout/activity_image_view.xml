@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <!--&lt;!&ndash;设置图片源、缩放类型（三种：fitXY、fitCenter、centerCrop）&ndash;&gt;-->
+    <!--<ImageView-->
+        <!--android:id="@+id/img1"-->
+        <!--android:layout_width="320dp"-->
+        <!--android:layout_height="480dp"-->
+        <!--android:background="#FFCC00"-->
+        <!--android:src="@drawable/ico_320_480"-->
+        <!--android:scaleType="fitXY"/>-->
+
+    <!--使用第三方工具glide设置网络图片-->
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="320dp"
+        android:layout_height="480dp"
+        android:background="#FFCC00"
+        android:scaleType="centerCrop"/>
+</RelativeLayout>
